@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+
+
+<tiles-definitions>
+
+
+
+	<!-- Templates -->
+
+
+
+    <definition name=".loginTemplate" template="/WEB-INF/views/layout/simple.jsp">
+
+        <put-attribute name="header" value="/WEB-INF/views/includes/headerNonConnecte.jsp" />
+
+        <put-attribute name="messages" value="/WEB-INF/views/includes/messages.jsp" />
+
+        <put-attribute name="body" value="/WEB-INF/views/layout/blank.jsp" />
+
+        <put-attribute name="footer" value="/WEB-INF/views/includes/footerNonConnecte.jsp" />
+
+    </definition>
+
+
+
+    <definition name=".simpleTemplate" template="/WEB-INF/views/layout/simple.jsp">
+
+        <put-attribute name="header" value="/WEB-INF/views/includes/header.jsp" />
+
+        <put-attribute name="messages" value="/WEB-INF/views/includes/messages.jsp" />
+
+        <put-attribute name="body" value="/WEB-INF/views/layout/blank.jsp" />
+
+        <put-attribute name="footer" value="/WEB-INF/views/includes/footer.jsp" />
+
+    </definition>
+
+
+
+    <definition name=".mainTemplate" template="/WEB-INF/views/layout/main.jsp">
+
+        <put-attribute name="header" value="/WEB-INF/views/includes/header.jsp" />
+
+        <put-attribute name="messages" value="/WEB-INF/views/includes/messages.jsp" />
+
+        <put-attribute name="body" value="/WEB-INF/views/layout/blank.jsp" />
+
+        <put-attribute name="footer" value="/WEB-INF/views/includes/footer.jsp" />
+
+        <put-attribute name="script-domaine" value="default" />
+
+    </definition>
+
+
+
+
+
+ 	<!-- Scènes génériques -->
+
+
+
+    <definition name="error.404.scene" extends=".simpleTemplate">
+
+        <put-attribute name="body" value="/WEB-INF/views/errors/404.jsp" />
+
+    </definition>
+
+
+
+    <definition name="error.500.scene" extends=".simpleTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/errors/500.jsp" />
+    </definition>
+
+    <definition name="error.hdiv.scene" extends=".simpleTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/errors/hdivError.jsp" />
+    </definition>
+
+    <definition name="business.exception.scene" extends=".mainTemplate">
+
+        <put-attribute name="body" value="/WEB-INF/views/errors/businessServiceException.jsp" />
+
+    </definition>
+
+
+
+    <definition name="runtime.exception.scene" extends=".mainTemplate">
+
+        <put-attribute name="body" value="/WEB-INF/views/errors/runtimeServiceException.jsp" />
+
+    </definition>
+
+
+
+    <definition name="security.exception.scene" extends=".mainTemplate">
+
+        <put-attribute name="body" value="/WEB-INF/views/errors/securityException.jsp" />
+
+    </definition>
+
+    <definition name="login.scene" extends=".mainTemplate">
+
+        <put-attribute name="body" value="/WEB-INF/views/commun/login.jsp" />
+
+    </definition>
+
+
+
+
+</tiles-definitions>
