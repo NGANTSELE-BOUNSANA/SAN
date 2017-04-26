@@ -24,7 +24,7 @@ public class HomeController extends AbstractController {
 	/**
 	 * Selects the home page and populates the model with a message
 	 */
-@RequestMapping(value = "/accueil", method = RequestMethod.GET)
+//@RequestMapping(value = "/accueil", method = RequestMethod.GET)
 public String home(Model model) {
 		logger.info("Welcome home!");
 		model.addAttribute("controllerMessage",

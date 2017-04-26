@@ -8,14 +8,31 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title><tiles:getAsString name="title" /></title>
-	<link href="<c:url value='/static/css/bootstrap.css' />"  rel="stylesheet"></link>
-	<link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
+<%-- 	<link href="<c:url value='/static/css/bootstrap.css' />"  rel="stylesheet"></link> --%>
+<%-- 	<link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link> --%>
+	<link href="<c:url value='/static/css/animate.css' />"  rel="stylesheet"></link>
+	<link href="<c:url value='/static/css/blue.css' />" rel="stylesheet"></link>
+			<link href="<c:url value='/static/css/bootstrap-datepicker.css' />"  rel="stylesheet"></link>
+	
+		<link href="<c:url value='/static/css/bootstrap.min.css' />"  rel="stylesheet"></link>
+	<link href="<c:url value='/static/css/docs.css' />" rel="stylesheet"></link>
+		<link href="<c:url value='/static/css/font-awesome.css' />"  rel="stylesheet"></link>
+	<link href="<c:url value='/static/css/green.css' />" rel="stylesheet"></link>
+		<link href="<c:url value='/static/css/jquery.selectbox.css' />"  rel="stylesheet"></link>
+	<link href="<c:url value='/static/css/jquery.timepicker.css' />" rel="stylesheet"></link>
+		<link href="<c:url value='/static/css/lightbox.css' />"  rel="stylesheet"></link>
+	<link href="<c:url value='/static/css/orange.css' />" rel="stylesheet"></link>
+		<link href="<c:url value='/static/css/owl.carousel.css' />" rel="stylesheet"></link>
 </head>
  
 <body>
-		<header id="header">
+		<%-- <header id="header">
 			<tiles:insertAttribute name="header" />
-		</header>
+		</header> --%>
+		
+			<section id="baniere">
+			<tiles:insertAttribute name="baniere" />
+		</section>
 	
 		<section id="sidemenu">
 			<tiles:insertAttribute name="menu" />
@@ -31,7 +48,7 @@
 <!-- 		</section> -->
 		
 		<footer id="footer">
-			<tiles:insertAttribute name="footer" />
+			<tiles:insertAttribute  name="footer" />
 		</footer>
 </body>
 </html>
