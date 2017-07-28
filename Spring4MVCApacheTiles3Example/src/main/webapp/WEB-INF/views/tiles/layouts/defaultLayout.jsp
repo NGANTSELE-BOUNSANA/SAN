@@ -26,17 +26,19 @@
 </head>
  
 <body>
-		<%-- <header id="header">
+		<header id="header">
 			<tiles:insertAttribute name="header" />
-		</header> --%>
+		</header> 
 		
-			<section id="baniere">
+				<section id="sidemenu">
+			<tiles:insertAttribute name="menu" />
+		</section>
+		
+			<section id="banner">
 			<tiles:insertAttribute name="baniere" />
 		</section>
 	
-		<section id="sidemenu">
-			<tiles:insertAttribute name="menu" />
-		</section>
+
 			
 		<section id="site-content">
 			<tiles:insertAttribute name="body" />

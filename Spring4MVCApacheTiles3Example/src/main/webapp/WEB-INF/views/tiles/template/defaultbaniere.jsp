@@ -1,7 +1,7 @@
     	<section class="banner">
         	<div class="owl-carousel" id="main_banner">
                 <div class="item">
-                	<img src="images/top-slider/home-slide-img1.jpg" alt="">
+                	<img src="resources/img/top-slider/home-slide-img1.jpg">
                     <div class="banner-text">
                         <div class="container">
                             <div class="top-title">

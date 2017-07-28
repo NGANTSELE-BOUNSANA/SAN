@@ -1,13 +1,14 @@
-<nav class="nav-main">
+
+<nav class="nav-main white-bg style2">
 	<div class="container">
 		<div class="nav-header">
-			<a class="logo" href="index.html"><img alt=""
-				src="images/logo.png"></a>
+			<a class="logo" href="index.html">
+			<img src="<c:url value="${logo-blck.png}"/>"></a>
 			<div class="small-btn">
 				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</div>
-		</div>
+		</div> 
 		<div class="nav-link">
 			<ul class="nav-ul">
 				<li class="sub-menu active"><a href="index.html">Home <i
@@ -64,4 +65,16 @@
 				data-target="#logoinPopup">Login / sign up</a>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.timepicker.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/jquery.form-validator.min.js"></script>
+    <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	
 </nav>
